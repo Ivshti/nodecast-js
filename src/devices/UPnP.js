@@ -15,6 +15,7 @@ class UPnP extends Device {
         this.name = opts.name;
         this.xml = opts.xml;
         this.type = opts.type;
+        this.headers = opts.headers;
     }
 
     play(url: string, timestamp: number): void {

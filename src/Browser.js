@@ -50,6 +50,7 @@ class Browser extends EventEmitter {
                 name: name,
                 address: rinfo.address,
                 xml: xml,
+                headers: headers,
                 type: 'chc'
             });
 
@@ -70,6 +71,7 @@ class Browser extends EventEmitter {
                 name: name,
                 address: rinfo.address,
                 xml: headers['LOCATION'],
+                headers: headers,
                 type: 'upnp'
             });
 
